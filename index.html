@@ -4,27 +4,32 @@
 	<title>CV Maxime Alain</title>
 </head>
 <body>
-<div>
-	<h1>Maxime Alain</h1>
-	<p> Business Process Owner</p>
+<div id="header_banner">
+	<span id="title_name">Maxime Alain</span>
+	<span> / Business Process Owner</span>
 </div>
 
 <div id="body_page">
 	<div id="parcours_pro">
 		<div class="parcours_titre">Parcours Professionnel</div>
 
-		<div class="pp_company">JCDecaux</div>
-		<div class="pp_location">Plaisir (78) - France</div>
-		<div class="pp_industry_type">Communication Extérieure</div>
-		<div class="pp_title">Business Process Owner</div>
-		<div class="pp_details_card">
-			<ul>
-				<li>XXXXXX</li>
-			</ul>
+		<div class="job_card">
+			<div class="pp_company">JCDecaux</div>
+			<div class="pp_location">Plaisir (78) - France</div>
+			<div class="pp_dates">Sept. 2021 - Maintenant</div>
+			<div class="pp_industry_type">Communication Extérieure</div>
+			<div class="pp_title">Business Process Owner</div>
+			<div class="pp_details_card">
+				<ul>
+					<li>XXXXXX</li>
+				</ul>
+			</div>
 		</div>
+		
 
 		<div class="pp_company">Dassault Aviation</div>
 		<div class="pp_location">Saint-Cloud (92) - France</div>
+		<div class="pp_dates">Mars 2021 - Sept. 2021</div>
 		<div class="pp_industry_type">Aéronautique</div>
 		<div class="pp_title">Support fonctionnel Gestion de Production et Logistique</div>
 		<div class="pp_details_card">
@@ -38,6 +43,7 @@
 
 		<div class="pp_company">TotalEnergies</div>
 		<div class="pp_location">La Défense (92) - France</div>
+		<div class="pp_dates">Mars 2020 - Mars 2021</div>
 		<div class="pp_industry_type">Energies</div>
 		<div class="pp_title">Ingénieur Méthodes Logistiques</div>
 		<div class="pp_details_card">
@@ -61,6 +67,7 @@
 
 		<div class="pp_company">ArianeGroup</div>
 		<div class="pp_location">Les Mureaux (78) - France</div>
+		<div class="pp_dates"></div>
 		<div class="pp_industry_type">Aérospatiale</div>
 		<div class="pp_title">Supply Chain Engineer</div>
 		<div class="pp_details_card">
@@ -85,6 +92,7 @@
 
 		<div class="pp_company">Manitou</div>
 		<div class="pp_location">Ancenis (44) - France</div>
+		<div class="pp_dates"></div>
 		<div class="pp_industry_type">Pièces détachées</div>
 		<div class="pp_title">Projet Tuteuré : Création d'entrepôt</div>
 		<div class="pp_details_card">
@@ -97,6 +105,7 @@
 
 		<div class="pp_company">Airbus</div>
 		<div class="pp_location">Toulouse (31) - France</div>
+		<div class="pp_dates"></div>
 		<div class="pp_industry_type">Aéronautique</div>
 		<div class="pp_title">Assistant Chef de Projet Logistique</div>
 		<div class="pp_details_card">
@@ -110,6 +119,7 @@
 
 		<div class="pp_company">Geodis</div>
 		<div class="pp_location">Le Mans (72) - France</div>
+		<div class="pp_dates"></div>
 		<div class="pp_industry_type">Logistique</div>
 		<div class="pp_title">Responsable d'équipe logistique</div>
 		<div class="pp_details_card">
@@ -122,6 +132,7 @@
 
 		<div class="pp_company">ULog</div>
 		<div class="pp_location">Nantes (44) - France</div>
+		<div class="pp_dates"></div>
 		<div class="pp_industry_type">Logistique</div>
 		<div class="pp_title">Préparateur Logistique</div>
 		<div class="pp_details_card">
@@ -133,10 +144,12 @@
 		<div class="parcours_titre">Parcours Scolaire</div>
 
 		<div class="ps_school"> Université de Nantes </div>
+		<div class="ps_dates"></div>
 		<p>Master en Logistique Internationale et Supply Chain Management</p>
 		<p>Gestion de Projet, Contrôle de Gestion, Communication, Langues, Logistique et Supply Chain Management, Gestion de bases de données (Access, Excel)</p>
 
 		<div class="ps_school"> Université de Nantes </div>
+		<div class="ps_dates"></div>
 		<p>Licence en Langues Étrangères Appliquées</p>
 		<p>Langues, Comptabilité, Economie, Droit, Marketing, Communication</p>
 
@@ -151,13 +164,26 @@
 		list-style-type: none;
 
 	}
+	#header_banner{
+		padding: 10px;
+		margin: 10px;
+		background-color: white;
+	}
 	#body_page{
-		margin-left: 25%;	
+		width: 75%;
+		margin: auto;	
+	}
+	#title_name{
+		font-weight: bold;
 	}
 	.parcours_titre{
 		color: lightblue;
 		font-weight: bold;
 		font-family: Helvetica;
+	}
+	.job_card{
+		padding: 10px;
+		background-color: blue;
 	}
 	.ps_school{
 		color: red;
